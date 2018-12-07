@@ -1,2 +1,5 @@
 #test
 # second commit from master branch
+# third commit from master: change comment
+# third commit from master: srore change in the existing comit
+# forth commit form master: store cahnge in the same commit as previous two
