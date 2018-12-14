@@ -1,10 +1,169 @@
-$bg-color: white;
-
 body {
-  background: $bg-color;
+    color: #1a1b1d;
+    max-width: 100%;
 }
 
-.feature-wrapper {
-  color: #000;
+.navigation {
+  width: 100%;
+  background-color: black;
+  background-size: cover;
+}
+
+#hero {
+  background: url('../assets/ides-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: 0 100%;
+
+  // @media(max-width: 34em) {
+  //   font-size: 1em;
+  // }
   
+}
+.navbar {
+  width: 100%;
+  background: none !important;
+
+  @media(max-width:34em)  {
+    background:  black !important;
+  }
+
+  .navbar-toggler {
+    cursor: pointer;
+    outline: 0;
+  }
+
+  .nav-link {
+    text-transform:uppercase;
+    font-weight: normal;
+  }
+  
+
+  .nav-item {
+    padding: 0 1rem;
+
+    @media(max-width: 34em) {
+      padding: 0;
+    }
+
+    .nav-link {
+      @media(max-width: 34em) {
+        font-weight: normal;
+        color: #fff !important;
+      }
+    } 
+    .navbar-brand {
+      @media(max-width: 34em) {
+        font-weight: normal;
+        color: #fff !important;
+      }
+    }
+  }
+
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.hero-img {
+  width: 20%;
+;
+}
+
+.grid {
+  display: grid;
+
+  grid-gap: 20px;
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "footer"
+}
+
+header {
+  grid-area: header;
+
+  background: url('../assets/ides-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: 0 100%;
+  height: 150pt;
+}
+
+sidebar {
+  grid-area: sidebar;
+  width: 400px;
+}
+
+content {
+  grid-area: content;
+  // position:;
+  // top: 55px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  overflow-y:scroll;
+}
+
+
+@media(min-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "footer footer"
+  }
+}
+
+
+.header {
+
+  height:auto; // Replace with the height your footer should be
+  width: 100%; // Don't change
+  background-position: 0% 0%;
+  background-attachment: scroll;
+  // position: fixed;
+  top: 0;
+  left: 0pt;
+  background-color: #000;
+  margin:auto
+
+}  
+
+.footer {
+
+  height:60px; // Replace with the height your footer should be
+  width: 100%; // Don't change
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  position: fixed;
+  bottom: 0;
+  left: 0pt;
+  text-align: center;
+  background-color: #000;
+
+} 
+
+.footer_content {
+
+  height:60px; // Replace with the height your footer should be
+  margin:auto;
+
+}
+
+.header {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.header_content{
+  width: 100%;
+  overflow: auto;
+}
+.foo {
+  height:60px; // Replace with the height your footer should be
+width: 100%; // Don't change
 }
